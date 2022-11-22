@@ -80,6 +80,7 @@ header .main-title {
 }
 header .header-line {
   margin-top: 1.5625vw;
+  height: 0.0520833333vw;
 }
 header .header-top-info {
   display: flex;
@@ -156,7 +157,7 @@ header .social-media a img {
 }
 
 .sport-club {
-  margin-top: 100px;
+  margin-top: 5.2083333333vw;
 }
 .sport-club .sport-club-wrapper {
   display: flex;
@@ -183,6 +184,8 @@ header .social-media a img {
   background-position: center;
   position: absolute;
   left: -23.8224637681vw;
+  -webkit-animation: topBottom 5s infinite;
+          animation: topBottom 5s infinite;
 }
 .sport-club .sport-club-info .sport-list-wrapper {
   margin-top: 1.8229166667vw;
@@ -384,4 +387,28 @@ footer .container .socials-footer a:last-child {
 footer .container .socials-footer a img {
   width: 1.5625vw;
   height: 1.0416666667vw;
+}
+
+@-webkit-keyframes topBottom {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 5.2083333333vw;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+@keyframes topBottom {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 5.2083333333vw;
+  }
+  100% {
+    top: 0;
+  }
 }/*# sourceMappingURL=style.css.map */

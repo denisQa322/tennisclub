@@ -121,6 +121,7 @@ header{
 
   .header-line{
     margin-top: toVw(30px);
+    height: toVw(1px);
   }
 
   .header-top-info{
@@ -204,7 +205,7 @@ header{
 }
 
 .sport-club{
-    margin-top: 100px;
+    margin-top: toVw(100px);
     .sport-club-wrapper{
         display: flex;
         justify-content: flex-end;
@@ -229,8 +230,8 @@ header{
             background-repeat: no-repeat;
             background-position: center;
             position: absolute;
-            left: toVw(-(calc($tennisWidth / 1.15)))
-
+            left: toVw(-(calc($tennisWidth / 1.15)));
+            animation: topBottom 5s infinite;
         }
 
         .sport-list-wrapper{
@@ -270,13 +271,10 @@ header{
                         left: 0;
                       }
                     }
-
                 }
             } 
-        }
-        
+        }   
     }
-
 }
 
 .stuff-section{
@@ -459,4 +457,20 @@ footer{
       }
     }
   }
+}
+
+@keyframes topBottom {
+  0%{
+    top:0;
+  }
+
+  50%{
+    top: toVw(100px);
+
+  }
+
+  100%{
+    top: 0;
+  }
+  
 }
